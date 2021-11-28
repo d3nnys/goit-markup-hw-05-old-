@@ -29,13 +29,13 @@
         <nav>
           <ul class="site-nav">
             <li class="item">
-              <a href="./studio.html" class="link">Студия</a>
+              <a href="./studio.html" class="link nav-link current">Студия</a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+              <a href="./portfolio.html" class="link nav-link">Портфолио</a>
             </li>
             <li class="item">
-              <a href="./contacts.html" class="link">Контакты</a>
+              <a href="./contacts.html" class="link nav-link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -65,7 +65,9 @@
       <section class="hero hero-bg">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -111,17 +113,26 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="picture-list">
-            <li class="item">
+            <li class="item img-list">
+              <div class="picture-text">
+                <p class="img-text">Десктопные приложения</p>
+              </div>
               <img src="./image/img1.jpg" alt="Написание кода" width="370" />
             </li>
-            <li class="item">
+            <li class="item img-list">
+              <div class="picture-text">
+                <p class="img-text">Мобильные приложения</p>
+              </div>
               <img
                 src="./image/img2.jpg"
                 alt="Оптимизация под смартфоны"
                 width="370"
               />
             </li>
-            <li class="item">
+            <li class="item img-list">
+              <div class="picture-text">
+                <p class="img-text">Дизайнерские решения</p>
+              </div>
               <img
                 src="./image/img3.jpg"
                 alt="Оптимизация под планшеты"
@@ -420,5 +431,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-close" data-modal-close>
+          <svg class="icon-btn">
+            <use href="./image/sprite.svg#icon-X"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
